@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+  <div class="container py-5">
+    <div class="row">
+      <aside class="col-12 col-md-3">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <img src="{% static 'img/python.png' %}" width="25" height="25" 
+            class="d-inline-block align-top" alt=""
+            >
+            Python
+          </li>
+          <li class="list-group-item">
+            <img src="{% static 'img/django.png' %}" width="25" height="25" 
+            class="d-inline-block align-top" alt=""
+            >
+            Django
+          </li>
+          <li class="list-group-item">
+            <img src="{% static 'img/html5.png' %}" width="25" height="25" 
+            class="d-inline-block align-top" alt=""
+            >
+            HTML
+          </li>
+          <li class="list-group-item">
+            <img src="{% static 'img/css.png' %}" width="25" height="25" 
+            class="d-inline-block align-top" alt=""
+            >
+            CSS
+          </li>
+          <li class="list-group-item">
+            <img src="{% static 'img/bootstrap.png' %}" width="25" height="25" 
+            class="d-inline-block align-top" alt=""
+            >
+            Bootstrap
+          </li>
+          <li class="list-group-item">
+            <img src="{% static 'img/git.png' %}" width="25" height="25" 
+            class="d-inline-block align-top" alt=""
+            >
+            GIT
+          </li>
+        </ul>
+      </aside>
+      <article class="col-12 col-md-9">
+        <p>На данный момент я в процессе изучения языка программирования
+          Python, фреймворка Django и других технологий, таких как 
+          HTML, CSS, Bootstrap, GIT и в попытках их применить все вместе. 
+        </p>
+        <p>
+          Этот список обязательно будет пополняться. Зайди позже проверить.
+        </p>
+      </article>
+    </div>
+  </div>
+{% endblock %} 
