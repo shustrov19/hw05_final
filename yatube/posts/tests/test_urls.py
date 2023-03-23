@@ -58,12 +58,16 @@ class PostURLTests(TestCase):
                 GROUP_LIST_PAGE,
                 PROFILE_PAGE_AUTHOR,
                 self.POST_DETAIL_PAGE,
-                PAGE_404
             ),
             self.authorized_not_author: (CREATE_PAGE, ),
             self.authorized_author: (self.POST_EDIT_PAGE, )
         }
         cache.clear()
+
+    def test_url_custom_404(self):
+        """Несуществующая страница недоступна."""
+        response = self.guest_client.get(PAGE_404)
+        self.assertEqual(response.status_code, HTTPStatus.NOT_FOUND)
 
     def test_urls_exists_at_desired_location(self):
         """Страницы доступные для каждого типа пользователей"""
