@@ -103,6 +103,10 @@ class Follow(models.Model):
             models.UniqueConstraint(
                 fields=['user', 'author'],
                 name='Уникальная подписка',
+            ),
+            models.CheckConstraint(
+                check=~models.Q(user=models.F('author')),
+                name='Запрет подписки на самого себя'
             )
         ]
 
