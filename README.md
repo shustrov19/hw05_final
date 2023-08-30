@@ -19,7 +19,8 @@
 ``` python3 manage.py runserver ```
 
 ### Автор 
-Виктор Шустров 
+[Виктор Шустров](https://github.com/shustrov19)
 
 ### Контакты
-email: shustrov19@gmail.com
+- Email: shustrov19@gmail.com
+- Telegram: @Shustrov19
