@@ -20,11 +20,8 @@
 
 ### Автор 
 [Виктор Шустров](https://github.com/shustrov19)
-[Виктор Шустров](https://github.com/shustrov19)
 
 ### Контакты
 email: shustrov19@gmail.com
-
-Telegram: [@Shustrov19](https://t.me/Shustrov19)
 
 Telegram: [@Shustrov19](https://t.me/Shustrov19)
