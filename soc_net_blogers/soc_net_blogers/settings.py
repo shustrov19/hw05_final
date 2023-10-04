@@ -11,6 +11,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '[::1]',
     'testserver',
+    'shustrov19.pythonanywhere.com',
+    'www.shustrov19.pythonanywhere.com',
 ]
 
 INSTALLED_APPS = [
@@ -24,6 +26,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'posts.apps.PostsConfig',
     'sorl.thumbnail',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -34,9 +37,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
-ROOT_URLCONF = 'yatube.urls'
+ROOT_URLCONF = 'soc_net_blogers.urls'
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
@@ -57,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'yatube.wsgi.application'
+WSGI_APPLICATION = 'soc_net_blogers.wsgi.application'
 
 DATABASES = {
     'default': {
@@ -113,3 +117,7 @@ CACHES = {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
     }
 }
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
